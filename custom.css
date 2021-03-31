@@ -1,0 +1,110 @@
+html, body {
+	font-family: Comic Sans;
+	background-color: rgb(51, 255, 255);
+}
+
+.navbar {
+
+}
+
+.navbar .navbar-brand {
+	font-family: Segoe Script;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: orange;
+	padding: 10px;
+}
+
+.navbar .navbar-brand:hover {
+	color: green;
+	background-color: white;
+	display: inline-block;
+}
+
+.modal-body {
+	color: rgb(51, 255, 255);
+	background-color: black;
+	margin:0px;
+}
+
+.modal-footer {
+	color: black;
+	background-color: orange;
+	margin: 0px;
+}
+
+.modal-header {
+	color: black;
+	background-color: orange;
+}
+
+.modal-title {
+	font-family: Segoe Script;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px;
+}
+
+.modal-xl {
+	width: 100% !important;
+}
+
+.aboutModalBody {
+	margin: 20px;
+}
+
+.jumbotron {
+	font-family: Times New Roman;
+	background-color: rgb(51, 255, 255);
+	margin: auto;	
+}
+
+.main {
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	color: rgb(51, 255, 255);
+}
+
+.nav-link {
+	font-size: 17.5px;
+	padding: 10px;
+}
+
+a:hover {
+	background-color: rgb(51, 255, 255);
+	color: black;
+}
+
+figcaption {
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	/*color: rgb(0, 191, 230); */
+	color: black;
+}
+
+.card {
+	min-height: 200px;
+}
+
+.btn .btn-primary {
+	background-color: rgb(51,255,255);
+	color: black;
+}
+
+.container {
+	justify-content: center;
+	align-items: center;
+}
+
+.btn .btn-primary: hover {
+	background-color: black;
+	color: white;
+}
+
+input[type = text] {
+	margin:0px;
+}

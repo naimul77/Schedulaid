@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<title></title>
+</head>
+<body>
+	<!--Student Entry Modal -->
+	<div class="modal fade" id = "studentEntryModal" tabindex="-1" aria-labelledby = "studentEntryModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">Student Entry:</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      		<form method = "POST" action = "processor.php">
+				    <div class="modal-body">		       
+			        	<div class = "form-group">
+				        	<label style = "font-size: 18px">Enter id:</label>
+				        	<br>
+				        	<input class = "form-control" type="text" name="student_id" id = "student_id" placeholder = "ID#">
+			        	</div>
+			        	<div class = "form-group">
+				        	<label style = "font-size: 18px">Enter name:</label>
+				        	<br>
+				        	<input class="form-control" type="text" name="fullname"id="fullname "placeholder="Firstname Lastname">
+			        	</div>
+			        	<div class = "form-group">
+				        	<label style = "font-size: 18px">Enter department:</label>
+				        	<br>
+				        	<input class = "form-control" type="text" name="dept" id = "dept" placeholder = "e.g.: CSE, BBA">
+			        	</div>
+			        	<div class = "form-group">
+				        	<label style = "font-size: 18px">Enter major:</label>
+				        	<br>
+				        	<input class = "form-control" type="text" name="major" id = "major" placeholder="e.g: Marketing, Computer Science">
+			        	</div>
+			    	 </div>   		   
+		      		<div class="modal-footer">
+			        	<button type="submit" name = "addstudent" class="btn btn-primary">Add Student</button>
+		      		</div>
+		      	</form>	
+	    	</div>
+	  	</div>
+	</div>
+	<!--About Modal -->
+	<div class="modal fade" id = "aboutModal" tabindex="-1" aria-labelledby = "aboutModalLabel" aria-hidden = "true">
+	  	<div class="modal-dialog modal-dialog-scrollable modal-xl" style = "width:77% !important;">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h4 class="modal-title">About SEIS4IUB:</h4>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+			    <div class="modal-body">
+				    <div class = "aboutModalBody">
+						<p style = "justify-content: center; font-size: 23px; font-family: Times New Roman">Welcome to Student Enrollment Information System for Independent University, Bangladesh!</p>
+						<br>
+						Dear Students,
+						<br>
+						<br>
+						You are prompted to enter your student ID, name, department and major into the system for analytic purposes.
+						<br>
+						You are also requested to update your information periodically when changes are made to your record. 
+						<br>
+						We hope you find the software to be operated with ease. 
+						<br>
+						<br>
+						<br>
+						<br>
+						To Respected Faculty Members, 
+						<br>
+						<br>
+						Comparative studies can be conducted based on different variables of interest such as departments, schools, courses and more. 
+						<br>
+						Graphs can be generated and tables can be formed to aid in the depiction of current enrollment and prediction of future outcomes.
+						<br>
+						We solely devote our development efforts to assure the interoperability of the software to reach your expectations.
+						<br>
+						<br>
+						<br> 
+						<br>
+						For Administration, 
+						<br>
+						<br>
+						All administrative members are welcomed to use the software with specific privileges.
+						<br>
+						Benefits include limited access to students records and graphical report generation software.
+						<br>
+						We are proud to inform that development of further system components for administrative purposes are upcoming. 
+						<br>
+						<br>
+						<br>
+						<br>
+						<p style = "justify-content:center; font-size:21.5px; font-family:Comic Sans; font-style: italic">
+			        		SEIS is a beneficial software regarded for the analysis of enrollment and trend forecasting in IUB.
+			        	</p>
+			        	<br>
+			        </div>
+			    </div>
+	      		<div class="modal-footer">
+		        	<p style = "font-size: 14px; justify-content: right; margin-right: 15px">Copyright &#169 2020 SEIS4IUB</p>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">SEIS4IUB</a>
+		<a class="nav-link" href="index.html">Home</a>
+		<a class="nav-link" href="#" data-toggle="modal" data-target = "#aboutModal">About</a>
+		<a class="nav-link" href="#" data-toggle="modal" data-target = "#studentEntryModal">Student Entry</a>
+		<form class="form-inline ml-auto" method = "POST" action = "processor.php" >
+		    <input class="form-control mr-sm-2" id = "user" name="user" type="text" placeholder="Username" style ="color:orange;">
+		    <input class="form-control mr-sm-2" id = "pass" name="pass"type="text" placeholder="Password" style ="color:orange;">
+			<button class="btn btn-primary my-2 my-sm-0" type="submit" name = "login">Login</button>
+		</form>
+	</nav>
+
+	<div class="jumbotron jumobtron-fluid center-block">
+		<div class = "container">
+			<div class = "jumbotron">
+				<p style="text-align: center; font-family: Gabo; font-size: 30px;">
+					Student Enrollment Information System for Independent University, Bangladesh
+				</p>
+				<hr class="my-4">
+				<center><img src="iub.png" style = "width:350px; height:250px;"></center>
+				<br>
+				<center>
+					<h4 style="font-family: Times New Roman;">Among the Most Prominent Educational Institutions in the Nation</h4>
+				</center>
+				<center>
+					<a href="iub.edu.bd" style="color:blue;font-size:15px;font-family:Comic Sans;">Visit official website</a>
+				</center>
+				<br>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-md-4">
+				<div class = "card h-100">
+					<div class = "card-body">
+						<figure>
+							<img src="latest_news.jpg" style = "justify-content: center; width: 320px; height: 201px">
+							<figcaption>Latest News</figcaption>
+						</figure>
+						<br>
+						<p>SESM prepared for Environment Day</p>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "card h-100">
+					<div class = "card-body">
+						<figure>
+							<img src="graphs.jpg" style = "justify-content: center; width: 320px; height: 201px">
+							<br>
+							<figcaption>Generate Graphs</figcaption>
+						</figure>
+						<br>
+						<p>Create graphs easily for comparative studies.</p>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "card h-100">
+					<div class = "card-body">
+						<figure>
+						<img src="tables.jpg" style = "justify-content: center; width: 250px; height: 201px">
+							<br>
+							<figcaption>Form Tables</figcaption>
+						</figure>
+						<br>
+						<p>Design tables of records.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p style = "font-size: 14px; justify-content: right; margin-right: 15px">Copyright &#169 2020 BannerOfNaynayy</p>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
