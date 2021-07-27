@@ -6,5 +6,5 @@ Lacks testing data and reliability ratings.
 
 Continued as a transition onto 2 separate software projects as the following:
 Project Management Tools (Only Detailed Design Documentation Available) &
-Computer Aided Software Engineering Tools (Research, Design and Prototype still in Development)
+Computer Aided Software Engineering Tools (Research, Design and Prototype still in Development with high-level Documentation available)
 
