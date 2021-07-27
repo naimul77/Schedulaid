@@ -5,6 +5,6 @@ Initial phase of an application development laying out the basic webpages and co
 Lacks testing data and reliability ratings. 
 
 Continued as a transition onto 2 separate software projects as the following:
-Project Management Tools (Only Detailed Design Documentation Available)
+Project Management Tools (Only Detailed Design Documentation Available) &
 Computer Aided Software Engineering Tools (Research, Design and Prototype still in Development)
 
